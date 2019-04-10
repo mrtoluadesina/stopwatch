@@ -1,5 +1,6 @@
 const app = './app';
 
 test('function is defined', () => {
-  expect(Stopwatch()).toBeDefined();
+  const sw = Stopwatch();
+  expect(sw.start()).toBeDefined();
 })
