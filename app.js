@@ -3,5 +3,8 @@ const Stopwatch = () => {
   this.start = () => {
     
   }
-
+  Object.defineProperty(this, 'duration', {
+    get : () => { return duration; }
+  });
 }
+module.exports = app
