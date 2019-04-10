@@ -1,10 +1,14 @@
 const Stopwatch = require('./app');
 const sw = new Stopwatch();
 
-test('function is not defined', () => {
+test('start method is not defined', () => {
   expect(sw.start()).not.toBeDefined();
 });
 
-test('function is called', () => {
-  expect(sw.start()).toHaveBeenCalled();
+test('duration method is called', () => {
+  expect(sw.duration).toBeDefined();
+});
+
+test('check for instance', () => {
+  expect(sw instanceof Stopwatch).toBe(true);
 });
